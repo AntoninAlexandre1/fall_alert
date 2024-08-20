@@ -15,11 +15,11 @@ Future<void> main() async {
       DeviceOrientation.portraitDown,
     ],
   );
-  const androidConfig = FlutterBackgroundAndroidConfig(
+  var androidConfig = const FlutterBackgroundAndroidConfig(
     notificationTitle: "flutter_background example app",
     notificationText:
         "Background notification for keeping the example app running in the background",
-    notificationImportance: AndroidNotificationImportance.Default,
+    notificationImportance: AndroidNotificationImportance.normal,
     notificationIcon: AndroidResource(
       name: 'background_icon',
       defType: 'drawable',
